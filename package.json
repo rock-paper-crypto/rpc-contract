@@ -1,4 +1,7 @@
 {
+  "name": "rpc-contract",
+  "version": "0.1.0",
+  "description": "Contract for Rock-Paper-Crypto system.",
   "dependencies": {
     "hardhat": "^2.4.1"
   },
