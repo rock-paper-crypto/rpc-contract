@@ -2,6 +2,11 @@
   "name": "rpc-contract",
   "version": "0.1.0",
   "description": "Contract for Rock-Paper-Crypto system.",
+  "scripts": {
+    "build": "hardhat compile",
+    "test:light": "hardhat test",
+    "test": "hardhat coverage"
+  },
   "dependencies": {},
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
