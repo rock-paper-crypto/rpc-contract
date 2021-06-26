@@ -8,6 +8,7 @@ contract ChallengesContract {
     }
 
     struct Challenge {
+        uint blockNumber;
         address listerAddress;
         uint amount;
         ChallengeChoice choice;
@@ -23,7 +24,7 @@ contract ChallengesContract {
     }
 
     function addChallenge(uint amount, ChallengeChoice choice) public {
-        Challenge memory c = Challenge({listerAddress: msg.sender, amount: amount, choice: choice});
+        Challenge memory c = Challenge({blockNumber: block.number, listerAddress: msg.sender, amount: amount, choice: choice});
         challenges.push(c);
     }
 }
