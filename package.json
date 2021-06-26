@@ -18,5 +18,6 @@
     "ethers": "^5.0.0",
     "hardhat": "^2.4.1",
     "solidity-coverage": "^0.7.16"
-  }
+  },
+  "license": "MIT"
 }
